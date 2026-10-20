@@ -18,3 +18,9 @@ Metrics for resume: (none yet)
 Resume prompt for next chat:
 Read CLAUDE.md, docs/PROJECT_BRIEF.md, docs/PROGRESS.md, docs/DECISIONS.md.
 Tell me in 3 lines where we are, then continue the current step in Hinglish.
+
+## Phase 0 log
+- 0.1 done: Next.js 16.4.2, Tailwind, shadcn/ui (Radix, Nova), Prettier, pushed to GitHub (Karunanidhisharma16/nudge).
+- 0.2 done locally: Vitest (3 tests pass), CI file added. vite-tsconfig-paths removed, using resolve.tsconfigPaths. @vitejs/plugin-react skipped (npm ERESOLVE with Babel 7/8); JSX works via tsconfig.
+- npm audit shows high vulnerabilities, all inside shadcn CLI deps (braces/fast-glob). Not fixing with --force (it downgrades shadcn). Recheck later.
+- Turbopack warns about a stray package-lock.json in C:\Users\karun. Harmless for now.
